@@ -1,0 +1,1 @@
+# Jetson_Orin_NX_setup_manual
