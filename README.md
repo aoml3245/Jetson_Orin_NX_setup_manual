@@ -59,6 +59,13 @@ sudo apt-get update
 sudo apt install rtl8188fu-dkms
 sudo reboot
 
+# 다른 무선랜 칩셋도 드라이버 다운하기
+git clone https://github.com/RinCat/RTL88x2BU-Linux-Driver.git
+cd RTL88x2BU-Linux-Driver
+make clean
+make
+sudo make install
+
 # 와이파이 잡히는지 확인
 
 
