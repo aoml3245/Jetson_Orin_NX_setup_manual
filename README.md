@@ -87,3 +87,10 @@ curl -O https://repo.anaconda.com/archive/Anaconda3-2025.12-2-Linux-aarch64.sh
 
 bash ~/Anaconda3-2025.12-2-Linux-aarch64.sh
 
+#ssh 연결 포트 추가로 열어두기
+sudo vim /etc/ssh/sshd_config
+# PORT 22
+# PORT 8822
+sudo systemctl restart ssh
+sudo systemctl restart sshd
+
