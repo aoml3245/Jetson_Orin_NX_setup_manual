@@ -66,6 +66,9 @@ make clean
 make
 sudo make install
 
+#인텔 무선칩 드라이버 다운로드
+sudo apt-get install iwlwifi-modules -y
+
 # 와이파이 잡히는지 확인
 
 
