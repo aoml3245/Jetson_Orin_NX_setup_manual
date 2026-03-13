@@ -69,6 +69,10 @@ sudo make install
 #인텔 무선칩 드라이버 다운로드
 sudo apt-get install iwlwifi-modules -y
 
+# 무선랜 카드 변경하고 나서 기존 와이파이 연결 안되면
+sudo rm  /etc/NetworkManager/system-connections/*
+sudo systemctl restart NetworkManager
+
 # 와이파이 잡히는지 확인
 
 
