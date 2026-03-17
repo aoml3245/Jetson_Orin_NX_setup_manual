@@ -95,11 +95,6 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository "deb [arch=arm64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt install code
 
-#conda 설치
-sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
-curl -O https://repo.anaconda.com/archive/Anaconda3-2025.12-2-Linux-aarch64.sh
-
-bash ~/Anaconda3-2025.12-2-Linux-aarch64.sh
 
 #ssh 연결 포트 추가로 열어두기
 sudo vim /etc/ssh/sshd_config
