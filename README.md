@@ -103,3 +103,20 @@ sudo vim /etc/ssh/sshd_config
 sudo systemctl restart ssh
 sudo systemctl restart sshd
 
+
+## torch 설치
+# jetson 에서는 jetson용 torch를 다운해야한다. Jetpack 버전을 확인하고 아래 링크에서 알맞은 파일을 다운하여 설치한다.
+
+## https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
+
+# substitute the link URL and wheel filename from the desired torch version above
+wget https://nvidia.box.com/shared/static/zvultzsmd4iuheykxy17s4l2n91ylpl8.whl -O torch-2.3.0-cp310-cp310-linux_aarch64.whl
+wget https://nvidia.box.com/shared/static/9si945yrzesspmg9up4ys380lqxjylc3.whl -O torchaudio-2.3.0+952ea74-cp310-cp310-linux_aarch64.whl
+wget https://nvidia.box.com/shared/static/u0ziu01c0kyji4zz3gxam79181nebylf.whl -O torchvision-0.18.0a0+6043bc2-cp310-cp310-linux_aarch64.whl
+sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
+pip3 install 'Cython<3'
+pip3 install numpy torch-2.3.0-cp310-cp310-linux_aarch64.whl
+pip3 install torchaudio-2.3.0+952ea74-cp310-cp310-linux_aarch64.whl
+pip3 install torchvision-0.18.0a0+6043bc2-cp310-cp310-linux_aarch64.whl
+
+
