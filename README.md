@@ -120,3 +120,16 @@ pip3 install torchaudio-2.3.0+952ea74-cp310-cp310-linux_aarch64.whl
 pip3 install torchvision-0.18.0a0+6043bc2-cp310-cp310-linux_aarch64.whl
 
 
+Jtop 설치
+sudo -H pip install -U jetson-stats
+sudo apt-get install python-pip
+sudo systemctl enable jtop.service
+sudo systemctl start jtop.service
+sudo reboot
+
+
+# 33번 스피커용으로 gpio 켜줃기
+sudo /opt/nvidia/jetson-io/jetson-io.py
+
+
+
